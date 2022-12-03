@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"> 
+    <style>
+        .overall{
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+        .logo{
+            display: flex;
+            justify-content: space-between;
+        }
+        #logo-left{
+            display: flex;
+            font-size: 30px;
+            margin-left: 5px;
+            margin-top: 5px;
+        }
+        .logo-right{
+            font-size: 35px;
+            color: orangered;
+            display: inline;
+            margin-left: 5px;
+        }
+        .content1{
+            display: flex;
+        }
+        #content1-img{
+            width: 450px;
+            height: 500px;
+        }
+        .content1-nd{
+            font-size: 30px;
+            font-weight: 1000;
+            margin-bottom: 15px;
+            padding-left: 100px;
+        }
+        .content1-nd1{
+            font-family: 'Roboto', sans-serif;
+            font-size: 17px;
+            font-weight: 600;
+            margin-top: 30px;
+            margin-bottom: 40px;
+       }
+       .content1-nd2{
+            font-family: 'Roboto', sans-serif;
+            font-size: 45px;
+       }
+       .content1-nd3{
+            font-family: 'Roboto', sans-serif;
+            font-size: 40px;
+            color: orangered;
+            font-weight:800;
+            margin-bottom: 10px;
+       }
+       #content2-line{
+           background-color: #e17055;
+           width: 62px;
+           height: 2px;
+           margin-bottom: 15px;
+       }
+       #dowload{
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           color: #e17055;
+           width: 150px;
+           height: 33px;
+           border:solid;
+           border-color: #e17055;
+           border-radius:50%/80px;
+           font-size: 13px;
+           font-weight: 900;
+           margin-left: auto;
+           margin-right: auto;
+           margin-top: 20px;
+           margin-bottom: 20px;
+       }
+       .content3{
+           display: flex;
+           justify-content: space-between
+       }
+       .content3-nd1{
+        margin-right: 100px;
+       }
+       .content3-nd2{
+        margin-right: 140px;
+       }
+       #content3-line1{
+           background-color: #e17055;
+           width: 85px;
+           height: 1px;
+           margin-bottom: 15px;
+       }
+       #content3-line2{
+           background-color: #e17055;
+           width: 93px;
+           height: 1px;
+           margin-bottom: 15px;
+       }
+       .content3-logo1{
+        display: flex;
+        margin-bottom: 10px;
+
+       }
+       .number{
+        font-weight: 900;
+        margin-top: 20px;
+        margin-bottom: 5px;
+       }
+       .Matrix{
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 5px;
+       }
+       .Fullstack{
+        font-size: 19px;
+        font-weight: 700;
+        margin-bottom: 30px;
+       }
+       .Lorem{
+        
+        font-weight: 500;
+       }
+       .list{
+
+       }
+       .javascript{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: gray;
+        width: 90px;
+        height: 33px;
+        border:solid 1px;
+        border-color: gray;
+        border-radius:70%/80px;
+        font-size: 13px;
+        margin-right: 10px;
+       }
+       .Node{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: gray;
+        width: 70px;
+        height: 33px;
+        border-color: gray;
+        border:solid 1px;
+        border-radius:80%/80px;
+        font-size: 13px;
+        margin-right: 10px;
+       }
+       .Express{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: gray;
+        width: 90px;
+        height: 33px;
+        border:solid 1px;
+        border-color: gray;
+        border-radius:70%/80px;
+        font-size: 13px;
+        margin-right: 10px;
+       }
+       .MongoDB{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: gray;
+        width: 90px;
+        height: 33px;
+        border:solid 1px;
+        border-color: gray;
+        border-radius:70%/80px;
+        font-size: 13px;
+        margin-right: 10px;
+       }
+       .Vue{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: gray;
+        width: 70px;
+        height: 33px;
+        border:solid 1px;
+        border-color: gray;
+        border-radius:80%/80px;
+        font-size: 13px;
+        margin-right: 10px;
+       }
+       .React{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: gray;
+        width: 60px;
+        height: 33px;
+        border:solid 1px;
+        border-color: gray;
+        border-radius:80%/70px;
+        font-size: 13px;
+        margin-right: 10px;
+       }
+       .Sequellize{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: gray;
+        width: 80px;
+        height: 33px;
+        border:solid 1px;
+        border-color: gray;
+        border-radius:70%/80px;
+        font-size: 13px;
+        margin-right: 10px;
+       }
+       .Github{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: gray;
+        width: 70px;
+        height: 33px;
+        border:solid 1px;
+        border-color: gray;
+        border-radius:70%/80px;
+        font-size: 13px;
+        margin-right: 10px;
+       }
+       .HTML{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: gray;
+        width: 70px;
+        height: 33px;
+        border:solid 1px;
+        border-color: gray;
+        border-radius:80%/80px;
+        font-size: 13px;
+        margin-right: 10px;
+       }
+       .Storyblok{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: gray;
+        width: 80px;
+        height: 33px;
+        border:solid 1px;
+        border-color: gray;
+        border-radius:80%/80px;
+        font-size: 13px;
+        margin-right: 10px;
+       }
+       .PWAs{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: gray;
+        width: 80px;
+        height: 33px;
+        border:solid 1px;
+        border-color: gray;
+        border-radius:80%/80px;
+        font-size: 13px;
+        margin-right: 10px;
+       }
+       .Responsive{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: gray;
+        width: 160px;
+        height: 33px;
+        border:solid 1px;
+        border-color: gray;
+        border-radius:50%/80px;
+        font-size: 13px;
+        margin-right: 10px;
+       }
+       .Vuetify{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: gray;
+        width: 80px;
+        height: 33px;
+        border:solid 1px;
+        border-color: gray;
+        border-radius:80%/80px;
+        font-size: 13px;
+        margin-right: 10px;
+       }
+       .content4{
+        font-family: 'Roboto', sans-serif;
+       }
+       #content4-line1{
+           background-color: #e17055;
+           width: 127px;
+           height: 1.5px;
+           margin-bottom: 15px;
+       }
+       .content4-nd{
+        display: flex;
+       }
+       .content4-nd1{
+        margin-right: 515px;
+       }
+       .content5{
+        font-family: 'Roboto', sans-serif;  
+       }
+       #content5-line1{
+           background-color: #e17055;
+           width: 100px;
+           height: 2px;
+           margin-bottom: 15px;
+       }
+       .content5-nd{
+        width: 1400px;
+        height: 300px;
+        background-color: #f1f2f6;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        margin-right: 30px;
+       }
+       .content5-nd11{
+        margin-right: 30px;
+        margin-left: 60px;
+       }
+       .Tripy{
+        font-size: 30px;
+        font-weight: 900;
+        margin-top: 20px;
+        margin-bottom: 20px;
+       }
+       .DETAILS{
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           color: #e17055;
+           width: 80px;
+           height: 25px;
+           border:solid;
+           border-color: #e17055;
+           border-radius:70%/80px;
+           font-size: 11px;
+           margin-top: 20px;
+           margin-bottom: 20px;
+       }
+       #img51{
+        margin-top: 15px;
+        width: 270px;
+        height: 300px;
+        object-fit: contain;
+        margin-right: 50px;
+       }
+       .backgroup{
+        background-color: black;
+        width: 100%;
+        height: 400px;
+        text-align: center;
+       }
+       .contentend{
+        color: white;
+        align-items: center;
+       }
+       #ready{
+        font-weight: 5000;
+        margin-bottom: 5px;
+       }
+       #feel{
+        margin-top: 10px;
+        font-size: 15px;
+        font-weight: 100;
+       }
+       #LETS{
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           color: #e17055;
+           width: 96px;
+           height: 33px;
+           border:solid;
+           border-color: #e17055;
+           border-radius:80%/80px;
+           font-size: 13px;
+           margin-left: auto;
+           margin-right: auto;
+           margin-top: 20px;
+           margin-bottom: 20px;
+       }
+    </style>
+</head>
+<body>
+    <div class="overall">
+      <div class="logo">
+        <i id="logo-left" class="fa-brands fa-js">
+            <div style="font-family: 'Roboto', sans-serif; font-weight: 900;">
+                &nbspJASON STROFF
+            </div> 
+        </i>
+        <div>
+            <i class="fa-brands fa-square-github logo-right"></i>
+            <i class="fa-brands fa-stack-overflow logo-right"></i>
+            <i class="fa-brands fa-facebook logo-right"></i>
+        </div>
+    </div>
+    <div class="content1">
+        <img id="content1-img"  width="450px" height="500px" src="https://i.pinimg.com/564x/a5/68/ea/a568ea270374d9db727df6be31fd53bc.jpg" alt="ảnh nền">
+            <div class="content1-nd">
+                <div class="content1-nd1">
+                    HI THERE
+                </div>
+                <div class="content1-nd2">
+                    I'm Jason Stroff <br>UI/UX DESIGNER + <br> DEVELOPER based in <br> Florida.
+                </div>
+                <div>
+                    <p style="font-family:'Times New Roman', Times, serif ;" class="content1-nd3">
+                        6+&nbsp&nbsp&nbsp&nbsp&nbsp89&nbsp&nbsp&nbsp&nbsp&nbsp52
+                    </p>
+                </div>
+                <div>
+                     <p style="font-weight: 600; font-size: 15px;font-family: 'Roboto', sans-serif;">
+                        Experience&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspProjects&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspHappy Clients
+                    </p>
+                </div>
+            </div>
+    </div>
+    <div style="font-family: 'Roboto', sans-serif;">
+        <div style="font-weight: 900; margin-top: 20px; font-size: 15px;">
+           <b style="font-weight: 500; font-family: Arial, Helvetica, sans-serif;">
+            About me
+           </b> 
+        </div>
+        <div id="content2-line"></div>
+        <div style="font-size: 20px; font-weight: 500;">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis interdum ante a porta blandit. Quisque velit tortor,
+            ultricies in quam ut, luctus convallis metus. Nuc vitae felis rutrum, mattis justo quis, bibendum tellus. Integer 
+            bibendum eget dolor nec venenatis. Aliquam erat volutpat. Etiam et est vitae turpis accumsan vulputate. Curabitur
+            et vehicula nisl, eu congue dolor. Vivamus nec hendrerit mi Nulla consequat tempor.
+        </div>  
+    </div>
+    <div style="font-family: 'Roboto', sans-serif;" id="dowload">
+        DOWLOAD RESUME
+    </div>
+    <div style="font-family: 'Roboto', sans-serif;" class="content3">
+        <div class="content3-nd1">
+            <div style="font-weight: 900; font-size: 13px;">
+                <b style="font-weight: 530; font-family: Arial, Helvetica, sans-serif;">
+                    CORE SKILLS
+                </b> 
+                <div id="content3-line1"></div>
+                <div class="content3-logo1">
+                    <div class="javascript">
+                        JavaScript
+                    </div>
+                    <div class="Node">
+                        Node.js
+                    </div>
+                    <div class="Express">
+                        Express.js
+                    </div>
+                    <div class="MongoDB">
+                        MongoDB
+                    </div>
+                </div>
+                <div class="content3-logo1">
+                    <div class="Vue">
+                        Vue.js
+                    </div>
+                    <div class="React">
+                        React
+                    </div>
+                    <div class="Sequellize">
+                        Sequellize
+                    </div>
+                    <div class="Github">
+                        Github
+                    </div>
+                </div>
+                <div class="content3-logo1">
+                    <div class="HTML">
+                        HTML
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content3-nd2">
+            <div style="font-weight: 900; font-size: 13px;">
+                <b style="font-weight: 500; font-family: Arial, Helvetica, sans-serif;">
+                    OTHER SKILLS
+                </b>
+                <div id="content3-line2"></div>
+                <div class="content3-logo1">
+                    <div class="Storyblok">
+                        Storyblok
+                    </div>
+                    <div class="PWAs">
+                        PWAs
+                    </div>
+                    <div class="Responsive">
+                        Renponsive Web Design
+                    </div>
+                </div>
+                <div class="content3-logo1">
+                    <div class="React">
+                        React
+                    </div>
+                    <div class="Vuetify">
+                        Vuetify
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content4">
+            <div style="font-weight: 900; font-size: 13px;">
+                <b style="font-weight: 530; font-family: Arial, Helvetica, sans-serif;">
+                    WORK EXPERIENCE
+                </b> 
+                <div id="content4-line1"></div>
+            </div>
+            <div class="content4-nd">
+                <div class="content4-nd1">
+                    <div class="number">
+                        2019 - Present
+                    </div>
+                    <div class="Matrix">
+                        Matrix Media Inc
+                    </div>
+                    <div class="Fullstack">
+                        Full Stack developer
+                    </div>
+                    <div class="Lorem">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing etit. Duis <br> 
+                        quis sem maximus ornare metus ut, congue erim. Sed <br> 
+                        termentum
+                    </div>
+                    <ul class="list">
+                        <li>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> 
+                            Duis quis sein maximus, ornare metur ut.
+                        </li>
+                        <li>
+                            Lorem ipsum dolor sit amet, consectetur edipiscing elit.
+                        </li>
+                    </ul>
+                </div>
+                <div class="content4-nd2">
+                    <div class="number">
+                        2018 - 2019
+                    </div>
+                    <div class="Matrix">
+                        Lexind
+                    </div>
+                    <div class="Fullstack">
+                        Senior app developer
+                    </div>
+                    <div class="Lorem">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing etit. Duis <br>
+                        quis sem maximus ornare metus ut, congue erim. Sed <br>
+                        termentum
+                    </div>
+                    <ul class="list">
+                        <li>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> 
+                            Duis quis sein maximus, ornare metur ut.
+                        </li>
+                        <li>
+                            Lorem ipsum dolor sit amet, consectetur edipiscing elit.
+                        </li>
+                        <li>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> 
+                            Duis quis sein maximus, ornare metur ut.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </div>
+    <div class="content5">
+        <div style="font-weight: 900; font-size: 13px;">
+                <b style="font-weight: 530; font-family: Arial, Helvetica, sans-serif;">
+                    LATEST WORKS
+                </b> 
+                <div id="content5-line1"></div>
+        </div>
+        <div class="content5-nd">
+            <div class="content5-nd11">
+                <div class="Tripy">
+                    Tripy mobile app
+                </div>
+                <div style="font-size: 20px;">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing <br> 
+                    elit. Duis quis sein maximus, ornare metur ut, congue <br> 
+                    enim. Sed fermentum nulla tellus, quis effictur mauris <br> 
+                    tristique effictur. Aliquam rhoncus sem sed <br> 
+                    ulamcorper venenatis. Aeneam malesuada eu onci <br> 
+                    non sodales.
+                </div>
+                <div style="font-family: 'Roboto', sans-serif;" class="DETAILS">
+                    DETAILS
+                </div>
+            </div>
+            <div>
+                <img id="img51" src="data:image/jpeg;base64,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" alt="ảnh nền tripy mobile app">
+            </div>
+        </div>
+        <div class="content5-nd">
+            <div class="content5-nd11">
+                <div class="Tripy">
+                    Hello mobile app
+                </div>
+                <div style="font-size: 20px;">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing <br> 
+                    elit. Duis quis sein maximus, ornare metur ut, congue <br> 
+                    enim. Sed fermentum nulla tellus, quis effictur mauris <br> 
+                    tristique effictur. Aliquam rhoncus sem sed <br> 
+                    ulamcorper venenatis. Aeneam malesuada eu onci <br> 
+                    non sodales.
+                </div>
+                <div style="font-family: 'Roboto', sans-serif;" class="DETAILS">
+                    DETAILS
+                </div>
+            </div>
+            <div>
+                <img id="img51" src="data:image/jpeg;base64,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" alt="ảnh nền tripy mobile app">
+            </div>
+        </div>
+        <div class="content5-nd">
+            <div class="content5-nd11">
+                <div class="Tripy">
+                    Cute cookies app
+                </div>
+                <div style="font-size: 20px;">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing <br> 
+                    elit. Duis quis sein maximus, ornare metur ut, congue <br> 
+                    enim. Sed fermentum nulla tellus, quis effictur mauris <br> 
+                    tristique effictur. Aliquam rhoncus sem sed <br> 
+                    ulamcorper venenatis. Aeneam malesuada eu onci <br> 
+                    non sodales.
+                </div>
+                <div style="font-family: 'Roboto', sans-serif;" class="DETAILS">
+                    DETAILS
+                </div>
+            </div>
+            <div>
+                <img id="img51" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUVFRUVFhYYGBgYGBgSEhgRGBUSEhgYGBQZGRgYGBgcIS4lHB4rHxgYJjgmKy8xNTU1GiQ7QDs1Py40NTEBDAwMEA8QGBISGDQhGiE1NDQ0NDQ0NDQxND8/MTE0NDE1NDExNDYxNDE/MTQ0PzQxND8xNDE0ND80MTExMT8xMf/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAACAwEBAQEAAAAAAAAAAAACAwABBAUGBwj/xAA4EAACAgECBAMGBQMEAwEBAAABAgARAxIhBDFBUQVhkQYTInGBoRQyUrHwB0LRFWLh8SOiwTMW/8QAGQEBAQEBAQEAAAAAAAAAAAAAAAECAwQF/8QAIREBAQACAQUBAQEBAAAAAAAAAAECERIDEyFBUTFhUgT/2gAMAwEAAhEDEQA/APbfhxM64TZmjhuKWqMP3guendjz6lc/JkIii5M1cSRMhygTcYyRAZtwNEI6mPRwJKuLURYikBuPxODNSYQZz3p0mOwI9jeLcec2e5EhxiZ5N8WNMxE0LxVw/dCJ/D0dpdymrGnWIFxLqRKx3GjbTUoyKZbGZCmBkW4ZaBKClSzBBgSCxhxbNKBOSXr84JW4tklZOO8WRIrGU7QUlmiiIb7xc1GKlSStUuVHNGSjIuc3Odly77GMwvO1w8OMy86dPKCRcwEXc24Hsbwfdi5iXTdmwYMRAszbjW4tjtULGZLdrjNNfDNRnWVxW04G81cOTOeWO3THLXh1S8D3kyHLJrmeLpybVeErTKrwjkEmjk0sRIgEzB7jUSTRs0pBZIStKYyNFlJQWNMEy7TRcBowyqmkoNcBnhGC4liVWqBcgMuoZUxinMaYpzLEpLQbhMYJmmUuSVJKjyasJpx5FE5AeXrM9uWG3z8erp6HHxKjrGLxA7zzYyGMXOZzvSdJ13pVzCaMeQTzKcSY7HxR7zF6VdMetHpxkEdjziecx8ZNCcXOd6ddcerHfLgwSROQvFxq8TM8K33JXUVo5SDOSnETTj4iS41qZR09AkVpkXiRD/ECY41vlGrXJrmM5xIM0cTk2a5Wu5m97DXJGl5GloLPJqgbRotTXIXlEiDqhkLA85VxpbaJeWJQO+/OKd5biKcTUjFoGeAXMjCLJm5GbR6zJF6pJdJt44GFqmf3ksPPdXyJkfcsRAaMRplqXbQsasQpjUaS11xrQsYpiA8NXExXSVqRpoRpiVo1XExY6StitGo8yK4jFyCYsblbUcw9RmQZB5wvfCZ03to94ZYyGZhkENTfQ+hk0u23HljFeZFRh/a3pLD+R9JmyNy1t97J72ZRk8j6QveeRjRs85JWuZTmEnvRGjk1F4LPMzZYByxo20M8S7xZyQGfyMsjNomeAWlEnsfSAxI6H0m5pijuVA1+R9JJTbsY/Zjh9xUJvZjh+06umTTPH3cvr2dnD/Mcn/8AlcFcvvKwey+AG+fzM6+qQSd3L6vYw/zGB/Z3AT+X0MNfZzB+mb1JhWZO7l9XtYf5jlv7M4ex9ZZ9nMRoVy8509ZkDmO5l9Ozj8jnf6AgGwjeG8GReagzb7wwxkMnO/V7WM9EHwvGf7BCTwvGOSiO1mTUZOd+rwnxjz+EI+3L5RP+gYhzv1nR1GCwuWZ2e0vTxvplw+D4xuB95vThVA5CKU1D1nvJc7WphJ+Q04xyqIfgEJsgS9RkZz3k5HHYP9PTsI1OCQdBF795N+8vKnGfDfweP9K+glDhcf6R6CBKKxyOMMbBj/SPQSvwuM/2j0EVUqORxP8AwuP9I9BL9wnYegmcwWjkcT83DowqhMx4BD0l6iIOsyzJLjAf6cnaSFrMkvKpwnwwyqhNtKVZh0DLG5hGLUTIaJYgoIZgWBIZDKuBFEsymEoQDkqUYQgVLIlgSQKVZCokhgCAEExhSCqQKWUYTCRT0gUqnrLMtllKs0Bl6RDCyFYCmWAR3jGUwR5mAGkSFYekGTSIC9MqMkgC4g42ra4YPcwWI7X8pkRrhFZWgGEiQKWM+kEyK5gETLuWzQA/YesBgElSC5YbfeBQAkBPaGQINd4F3IZRHaEtwKoQgID/AEk1fwQLLVLBgkgSvejlUApKkDCQwKdW6QQfKGHglieQgCWMFmhvVbzOXAJq4Bq0DM56iDjzauldN5YyAmhAUHroajEybc7gnJXT1lo6ttVGAv3o85UfoP6ZJoNGOUfhl6xIXH/cyEDOb/LfyjS1CUuQHl9oTIpgAmcHavSaABEoi9ITnSIDAJZURK5SenrKLkjkfO9vSA3YQkAmc0RR+8Bc452AB3ND1gbCJTgDnOdl8YUDWCoQc3c0p8lA3bl0nL4jxlOIKomd8VnVrQIquo2Kl2Vyi3/cADY5iWRLY9MH8pZ3E43BFsL6HGZthvqbMg6AtqYsKq9Q2Nm7I238RxwB0IC7m6A2AqrJPlYv5y2ErzHtD7ccJw2Q4WGXI6nS44dAwQ6Q2kuzKLojYE1e86fs94/w/GITgdiVr3iZBpyrfIkHYjn8QJG3OY38Z05zg4dHfJZfK2JHbAjNvbso0hmN9CTRuozw1kbiBmyIq5CuguihMgVgTpLJ+dPhsXY2B2Ow1qa/PKbu3oPj6S0DSzkHTf6SwxPl85zaWXMi2eUjgVZNeZ2EiNQ6QJ7u9z9oJ25RmontIV/nOBz+O8RXEuvIVVbqztv2k4TOmVA6Uynr8jU058SMCrgMDzVgGU/MGDw+BEXSiqgHRAFX0EA1xgclisqbGtvpvGDyaNqBhRiOZuHkQUDddRfOPKDqJWXGGFGaCNZ7/cSSvwi95IF5GI5CZOIa/mLq9xdeZh8Tj1hlNrfI7ML81PMbcusz8MmYOxcYiCx0HHrVwtmtVghj06SUEjtWsYzqG1fAr0avfURX16R34p7HxLpPcEtd+RoCo5MQYb8jsQeUJeHHltyA2FSBgzr5X57Q1NgURvy6iZwgu9J/f7RqKBuCR35iBaOdw3PoRyIhE3yoymsjY7fW4SJUBXEKaA06id0AsLY6s3JR/ACdpyX4LK7sHQFABVPpx3W9IBqbrzoHlPQCcjj/ABhAdC0e7fmHzUAix52JZL6Lr25XiOHCygPZVReUstt5IdVJjxDmxYgGlG5mPgPFOByIceB8bOzFECImDKaGnGoDKEz0dRABCnoDOx+H4fKqo+NGVTqVXTUAxb81F/zE38XPzuDxXsxhy06s6ldgA7unMbHFkLKdwOTDlznSa91i79R53H4suHiE4TIVbQurgnxFkBcAo2AKRsoYsFUklGAW6BM1+Ke0Yfh2fHq15GTg8W2h9WVizMD/AGgIpOo0PgHcEeR9seGzY86ZSuR8yurKWVtFq40FGIGn4hZI23P0LwocRxedHTATiTJl4krjfVj95mUUA6kAKqhV3I21BSDuOt6cnj99uUzvn1+x9F8POJlbh0fLlCAJk3yY01ltLqvErQORarTqsVXPknKyEZMSFG0nJhAVXZsZ0tS5WBJI+La9O7f7pzOL9kuI4pFx5xWMAKMePifw+NApsacKYHQm+7HkNzAHgfFcNkVsjPnQDR78L/5xjpgcXEBS34jGLBBZLG5BWgDz1q/vlve5+PT+zfGrmwr+pQoPmCtqfTb5gzqlPOfPPZPxIpxKIdlya0HxjINnbR8f952C31u+s+ilZf8Ao6fHL+XydHPlj/Z4LVDyO489xKOPaqH0jd+8zZQ45N6gTg6molEb/QRmj+dZzWVj+YkzRw2rkbHbeAWbWDfNe1b+sagHaWT5y/SAt0AgOhrnv9jGZEvl6TExYbKT9P8AEBeU5DYRl2NGwWI2utvIiMTKx+Eij3H5b/8AkrEr6i1DUQAzaQGIBNKW6gWfUzQb/SPn1mgr3J7CSM1nsPUyQFs9Dc7faLegQx5VV3QA6nc0Om/nKpTyofMb1+8JCOg3HI0Qa+vLkNvKZBF+VfT7wC7WK6E3qvl5RmmqAH+Bsf5t3mSuIN//AJoNQ/LqysVve70BTXzjaumrWJVTgcZh41PeNhdHBKvjTJuwpUDoXLCgSGIrYajyjuA8WyOdD4SmQDXWpGTRqK6rBsfKuo7GTkOxyO0p2Hn8hZ/aZcuU1QF73uSv3WCytkChmZdw3/jd06fl1CiR6GVF+KcSVxPTUQt+em/iI6ja/SfKvE/bbh0JVdTncHTekfUzve2HjQ0PhxupsHWQCA9jkbJLD5nefFXxNZ273tX2mtWRi5S165vbdtWoJXkrV9eXbblPQeEf1ASgHyOjWd2W1IJ/UDd11+k+WFD2mjg+Ay5WCY8bu55LjVmY+dDp5xr+rt9u8W9pE4jguIUspR0OMMpGRFZ6VTYNg6uhA3oXK8LxphxKiNk0DcIjvjA5dMdHlXMk+c+Z+K+xfFcKmNsikHIpYqnxBKOys4+Et1octt5gzeO8Yo0HI6gbUAF+9feWZWfjN83y+1cN4jj6Ix76nyOe/NmPSdnhfE0/3j5PkWvpdfw8+v5tPiOa794999RnR4L2r43FWjO/emC5B/7AxurH35vB+Hy5FzFmLK4cAFAusb2Qq2DddeYvnO+H5efXtPlf9PfaDj+NyaXx4jhSve5tLI4NWFWjTOdtq2HPpPqgqTLK5alv41jjJuyfqyB/DC2i9A/hl6q6j6zKq0LfL95TkjcUfL/EplvofoRAbGeh9doAvk6FaJ+hkc0L+lgn1i3RyKI/YxeAlLBFKeVkEenaBqx5O/rGO3Wh9Jxx41h1lQaCv7s/lADVd7kfD0HnNeDi8bi0cHbz5HrXUbH0MbGg5h2gvkHn9JmpEUAAADkFFV8tI25D0kSjYLbf2H8p3NUTuG+dDpz5y7D/AHvmfSSBo/2t6iSBzCpDXdXY33odFoAefO65bgzTic8iWO3flv2H829VZcLX+W66ixB9y12FO3Xe9+lRR0DkO3Py/wCj9YwOOX17znYnYA6ls7/CLBPnZHbvNRe/7q6FgQSCfmCPWQ2MN8QW2o72oFXZJ1EDb5ys3CI+mxrZTas+zDexuoHYbdaF94b4wQNRNfOWa5Vy5XGgQxL2BrnfPn/NoSsrAgWL2uiOY57wVP8AjtDWB8643+nmUk1nTT+ayrgk+ai79TORx/8AT3iU+IKuUHriaiPmr0f3n11lgS7TjHyfw3+nfEOy60XGt/EzMjsB5KpJJn0bwH2awcIpXEtMa1uTbtXc9vIbfeb3s9YlHa9jy/nKQk0ninhQzKyNelvzaWKN/g/I/PtXivGv6eo6HQxJF7ZNIJ32IZRQPlQn0hGsXByL5f8AEFkr4lg/pbnJOp8a2LUM5J/9Qf3lcT/T18bohdWZ9k0JmyKDdDUyKQPr0E+vNwqpqZFG+7ECifnCRSRvFmzi53gPArw2FMSUqLdahpdt7LML2JO+9TrYcituGDb18BDAbXvV+URk4VWBUgEHYjmCCNwR2kwcKVZiDSmvhFAWP7j3bz7ARpXSAiMwPSMxt5xhAMDlrqPJmFGEhYbFj9Tf7zeyDtFaFHc/zlABcxHS/P8AL+0ayqwoiwe8AKP+5d1yEDEPBsVsQPzEM1hdyooE7dK27TOfCwllCwvchTtd3dd78p1kYGLzErvVjr0jQxoDW4b6gDz6whgXlQ3smwCDfOx5wcvEKdiB8739OnWZmRFN6KHOwL/aE22+5/2p9v8AEqI96vY/z6SoVtC2P+a/aWqC737czDxjbtE57FeZ5jlAawFH/wCzGpH/AB8o52+E9YhFN8ppK3hbFxR2h4Qal5Fv/MyoAJYaFix11uM93AWjkecaAGHaLKGRLECnSuciYb8obtLQwA3WF7w13+cYw6TEzVt1gPPE109JEF8wR18opW6AQwDAcMfYxXEAiqsDlsCTGI9c/wDiOVoGXCW33B7fLzNzQG/62k0DoBIYFtElo0mZc+M8xAMOOUvT5zG1/LyNQ1ykQDZq8v2hpxAIi04i9yPvM/EOAQV6/aBobAjb1v3EgxKPPpvOf+Ke+nyr/wCxi8U9jZSOvMN9JpNtvuV7SQPe+UuBYzgSJlJJFbd+kyFukNTXymVaVUQ0xgTGmXciag0BolZAekpWhBoGU5GG1EzQmU9RKNSi0DQHl0JmDw1aaGgIJNMVrhLkuAVQHxg9oRaVcyF6FFnfp8oQIgOIldrFwNHvJWq4gbQhAerQHzG6ig9HeIycUb+Ef5grarGWWM5y536maE4g9TNJs9lvmPWLfADy2+UcGEozKspQDa9+kUyA8786m5xMrNQ3qAC41hqq9KmfK4rb7TM+cDeyPOEdHR/LMqcr8cnf7yTSNYQ84a5LhKBFum8yoA1GdFNxcxolTSj1yl0QwiQGEGuFpkUBMS7RzCLZCeUDOrEzYm3WLTFUaVmkiiT0jEaLBAhLkBmVNBkNQVMovAsqekFsdwX4kCWMl7gwKVa2kkO8tWgKzptfrMmok7CdQC4p0qWJWdF23hKl9JTLKRzKHQ1aZsnEBeZihxgG5NL5zJtvDCJzYwwqRMisLH0hwrlcUpSu3Wt5g4yyAK2noHW5zuP4XUvw8xvUukrk/D+kfaSI93l/RKhl6PDDaSSVpYjEkkgGnOaRJJIsWZFkkgU0oySShJ/NAXnJJMjTFP1kklGcRnD8pJJBpgjnJJKGJCeSSQY83OKXnJJNIVniOK/JKkmaNHCfkWb5JJYoYp5JJUZ5JJJEf//Z" alt="ảnh nền tripy mobile app">
+            </div>
+        </div>
+    </div>  
+</div>
+    
+    <div class="backgroup">
+        <p style="color:grey ; padding-top:100px ;">
+            STAY IN TOUCH
+        </p> 
+        <p class="contentend">
+            <h1 id="ready" style="color: white;">Ready to talk ?</h1>
+            <h3 id="feel" style="color: white;">Feel free to contact us</h3>
+        </p>
+        <p>
+            <div style="font-family:Arial, Helvetica, sans-serif ;" id="LETS">
+                LETS TALK
+            </div>
+        </p>
+        <p style="color: grey;">
+            © 2022 All right reserved. Free minimal bootstrap template by Designstub.
+        </p>
+    </div>
+</body>
+</html>
